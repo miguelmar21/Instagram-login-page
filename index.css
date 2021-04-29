@@ -1,0 +1,171 @@
+html, body{
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 450px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.main-container{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 50%;
+}
+
+.main-container form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"], input[type="password"] {
+    margin: 0 auto 5px auto;
+    padding: 10px;
+    width: 260px;
+    color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+input[type="submit"]{
+    margin-top: 5px;
+    width: 282px;
+    height: 30px;
+    color: white;
+    background-color: #99ccff;
+    border: none;
+    border-radius: 5px;
+}
+
+.or-container{
+    display: flex;
+    align-items: center;
+
+}
+
+.line{
+    height: 1px;
+    width: 108px;
+    background-color: gray;
+}
+
+.or{
+    margin: 0 20px;
+}
+
+.facebook{
+    display: flex;
+    justify-content: center;
+}
+
+.fa{
+    color: rgb(56, 81, 133);
+}
+
+.fa.fa-facebook-square::before{
+    margin-right: 5px;
+}
+
+.account-setup{
+   margin-top: 20px;
+   height: 180px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.account-setup a{
+    text-decoration: none;
+}
+
+.sign-up{
+    color: #99ccff;
+}
+
+.download-container{
+    width: 300px;
+    height: 100px;
+    display: flex;
+}
+
+.app-store{
+    width: 50%;
+    background-image: url(./appstore.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+}
+
+.google-play{
+    width: 50%;
+    background-image: url(./googleplay.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 4px;
+}
+
+
+.footnotes p{
+    font-size: 14px;
+    word-spacing: 4px;
+    color: gray;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 450px){
+    .main-container{
+        border: 1px solid lightgray;
+        margin-top: 50px;
+    }
+
+    span{
+        border: 1px solid lightgray;
+        width: 350px;
+    }
+
+    .google-play{
+        width: 175px;
+    }
+
+    .app-store{
+        width: 175px;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 875px){
+    .container{
+        width: 800px;
+    }
+
+    .phone-container{
+        margin-top: 50px;
+        width: 400px;
+        height: 700px;
+        background-image: url(https://www.instagram.com/static/images/homepage/home-phones@2x.png/9364675fb26a.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    footer{
+        width: 800px;
+        margin-right: 400px;
+    }
+}
